@@ -9,8 +9,16 @@
     <body>
         <p class="title">Sameer&Samiksha Wedding Invitaition</p>
         <div class="animation">
-            <iframe src="./src/Sameer-Samiksha-Wedding-Inviation.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-            </iframe>
-        </div>    
+            <!-- <iframe src="./src/Sameer-Samiksha-Wedding-Inviation.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe> -->
+            <video id="vid" controls allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                <source src="./src/Sameer-Samiksha-Wedding-Inviation.mp4" />
+            </video>
+        </div>  
+        <script type="text/javascript">
+            var myvid = document.getElementById('vid'); 
+            myvid.playbackRate = 0.6;
+            console.log("Created by Sameer Chalke")
+        </script>  
     </body>
 </html>
