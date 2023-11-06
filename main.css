@@ -28,8 +28,33 @@ video, iframe {
     padding: 0;
     margin: 0;
 }
+.translate-button {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+}
+.translate-button input {
+    background-color: #860001;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ece9b7;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Responsive */
 @media (max-width: 767px) {
     .title {
-        font-size: 16px;
+        font-size: 12px;
+        padding: 0 27px;
+    }
+    .translate-button input {
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
     }
 }
