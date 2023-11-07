@@ -32,6 +32,7 @@ video, iframe {
     position: fixed;
     top: 0%;
     right: 0%;
+    z-index: 999;
 }
 .translate-button input {
     background-color: #860001;
@@ -42,19 +43,19 @@ video, iframe {
     border: 1px solid #ece9b7;
     font-size: 20px;
     cursor: pointer;
-    z-index: 999;
+    padding: 0 0;
 }
 
 /* Responsive */
 @media (max-width: 767px) {
     .title {
-        font-size: 12px;
+        font-size: 20px;
         padding: 0 27px;
     }
     .translate-button input {
         border-radius: 50%;
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         font-size: 10px;
     }
 }
