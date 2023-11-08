@@ -46,7 +46,29 @@ video, iframe {
     cursor: pointer;
     padding: 0 0;
 }
-
+.location {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-direction: column;
+    gap: 10px;
+}
+.location a {
+    width: auto;
+    font-size: 14px;
+    line-height: 14px;
+    color: #860001;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ece9b7;
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 50%;
+}
 /* Responsive */
 @media (max-width: 767px) {
     .title {
@@ -58,5 +80,9 @@ video, iframe {
         width: 30px;
         height: 30px;
         font-size: 10px;
+    }
+    .location a img, .location a svg {
+        width: 25px;
+        height: 25px;
     }
 }
